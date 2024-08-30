@@ -347,6 +347,7 @@ var iframe = document.getElementById('myIframe');
    x = 0
 function countSecond() 
 {　
+ var iframe = document.getElementById('myIframe'); // 获取iframe元素
     if(x<10) {
         x = x+1
         iframe.contentWindow.location.reload(true)=x 
