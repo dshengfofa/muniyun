@@ -48,7 +48,7 @@ function MM_openBrWindow
 <script language='JavaScript' 
 
 type='text/JavaScript' src='guest.js'></script>
-<script language="JavaScript" src="top.js"  
+<script language="JavaScript" src="top.js"      
 
 type="text/JavaScript"></script>
 	     
@@ -349,12 +349,18 @@ function countSecond()
 {　
     if(x<10) {
         x = x+1
-        document.getElementById("myIframe").value=x 
+        iframe.contentWindow.location.reload(true)=x 
         setTimeout("countSecond()", 3000)
     }
 }
+
+	    
 // 执行函数
 countSecond()
+
+
+
+	    
 </script>   
                        
 
