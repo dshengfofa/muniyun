@@ -344,21 +344,21 @@ var iframe = document.getElementById('myIframe');
         iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2";
     }
 	
-   x = 0
-function countSecond() 
-{　
- var iframe = document.getElementById('myIframe'); // 获取iframe元素
-    if(x<10) {
-        x = x+1
-        iframe.contentWindow.location.reload(true)=x 
-        setTimeout("countSecond()", 3000)
-    }
+function refreshIframe() {
+    var iframe = document.getElementById('myIframe'); // 获取iframe元素
+    iframe.contentWindow.location.reload(true); // 刷新iframe页面
+    setTimeout(refreshIframe, 5000); // 每3秒钟后重复此过程
 }
+ 
+// 启动定时刷新
+refreshIframe();
 
 	    
 // 执行函数
 countSecond()
-
+  setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 1000)
 
 
 	    
