@@ -334,8 +334,14 @@ cellSpacing=0 cellPadding=0 width=100% align=center border=0 height=100%>
 <iframe    width="780px" height="800px" id="myIframe"  style="float:right" src="https://nn80947180.zicp.fun/phpcms/info.php?jie=2"></iframe>
 	 <script>  
 
-var iframe = document.getElementById('myIframe');
  
+
+
+	
+var iframe = document.getElementById('myIframe');
+setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 1000)
 
 	 if (iframe.src != "https://nn80947180.zicp.fun/phpcms/info.php?jie=2") {
         iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2";
@@ -343,23 +349,33 @@ var iframe = document.getElementById('myIframe');
  if (iframe.src != "") {
         iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2";
     }
+
 	
-function refreshIframe() {
-    var iframe = document.getElementById('myIframe'); // 获取iframe元素
-    iframe.contentWindow.location.reload(true); // 刷新iframe页面
-    setTimeout(refreshIframe, 5000); // 每3秒钟后重复此过程
-}
- 
-// 启动定时刷新
-refreshIframe();
-
-	    
-// 执行函数
-countSecond()
-  setTimeout(function () {
+setTimeout(function () {
                     iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
-                }, 1000)
+                }, 5000)
+				
+	 setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 10000)
 
+
+ setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 15000)
+
+
+ setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 20000)
+
+
+ setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 25000)				
+				
+				
+				
 
 	    
 </script>   
