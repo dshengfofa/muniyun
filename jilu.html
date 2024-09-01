@@ -334,22 +334,30 @@ cellSpacing=0 cellPadding=0 width=100% align=center border=0 height=100%>
 
 <iframe    width="780px" height="800px" id="myIframe"  style="float:right" src="https://nn80947180.zicp.fun/phpcms/info.php?jie=2"></iframe>
 	 <script>  
-
- 	// 获取iframe元素
 var iframe = document.getElementById('myIframe');
- 
+ var url = parent.iframe.contentWindow.location.href;
 
-	 if (iframe.src != "https://nn80947180.zicp.fun/phpcms/info.php?jie=2") {
-       setTimeout(function () {
+	 if (url != "https://nn80947180.zicp.fun/phpcms/info.php?jie=2") {
+		
+     setTimeout(function () {
                     iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
-                }, 0)
-    }
-	 if (iframe.src != "") {
-       setTimeout(function () {
+                }, 500)
+}else{
+	  setTimeout(function () {
                     iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
-                }, 0)
+                }, 500)
+				
     }
-	
+	 if (iframe.src == "https://nn80947180.zicp.fun/phpcms/info.php?jie=2") {
+     setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 500)
+}else{
+	  setTimeout(function () {
+                    iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+                }, 500)
+				
+    }
 	 setTimeout(function () {
                     iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
                 }, 5000)
@@ -412,5 +420,17 @@ width="200" valign="top"><div align="center"><img src="img/no1.png" width="123" 
 valign="top"><div align="center"><img align=absmiddle src='img/xiaoheshang1.gif' border='0'></div></td>
   </tr>
 </table>
+<Script> 
+function reurl(){ 
+url = location.href; //把当前页面的地址赋给变量 url 
+var times = url.split("?"); //分切变量 url 分隔符号为 "?" 
+if(times[1] != 1){ //如果?后的值不等于1表示没有刷新 
+url += "?1"; //把变量 url 的值加入 ?1 
+self.location.replace(url); //刷新页面 
+} 
+} 
+onload=reurl 
+</script> 
+	 
 </body>
 </html>
